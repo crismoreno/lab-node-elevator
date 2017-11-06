@@ -24,17 +24,20 @@ class Elevator {
   _passengersLeave() {}
   floorUp() {
     if (this.floor < 10) {
-      this.floor++;
+      return this.floor++;
+
     }
+
   }
   floorDown() {
     if (this.floor > 0) {
-      this.floor--;
+      return this.floor--;
     }
+
   }
   call() {}
   log() {
-    console.log(`Direction: $(this.direction)`, `Position: $(this.floor)`);
+    console.log(`Direction: ${this.direction}, Position: ${this.floor}`);
   }
 }
 
