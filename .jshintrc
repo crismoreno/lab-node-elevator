@@ -5,6 +5,11 @@
   "esversion": 6,
   "globals": {
     "console": true,
-    "$": true
+    "$": true,
+    "module": true,
+    "setInterval":true,
+    "clearInterval":true,
+    "require": true,
+    "constructor": true
   }
 }
