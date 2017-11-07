@@ -8,11 +8,6 @@ class Person {
     this.originFloor = null;
     this.destinationFloor = null;
   }
-
-  logRequest() {
-    Elevator.requests.push(this);
-
-  }
 }
 
 module.exports = Person;

@@ -9,10 +9,12 @@ class Elevator {
     this.requests = [];
 
     this._intervalID = null;
+    this.waitingList = [];
+    this.passengersIn = [];
   }
 
   start() {
-    this._intervalID = setInterval(this.update, 1000);
+    this._intervalID = setInterval(() => this.update(), 1000);
   }
   stop() {
     clearInterval(this._intervalID);
@@ -36,8 +38,8 @@ class Elevator {
     }
 
   }
-  call() {
-
+  call(person) {
+    this.waitingList.push(person);
   }
   log() {
     console.log(`Direction: ${this.direction}, Position: ${this.floor}`);
