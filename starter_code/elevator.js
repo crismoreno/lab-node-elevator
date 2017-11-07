@@ -1,4 +1,5 @@
 "use strict";
+const Person = require('./person.js');
 class Elevator {
   constructor() {
     this.floor = 0;
@@ -35,7 +36,9 @@ class Elevator {
     }
 
   }
-  call() {}
+  call() {
+
+  }
   log() {
     console.log(`Direction: ${this.direction}, Position: ${this.floor}`);
   }

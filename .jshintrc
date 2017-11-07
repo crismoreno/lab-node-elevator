@@ -11,5 +11,6 @@
     "clearInterval":true,
     "require": true,
     "constructor": true
+    
   }
 }
